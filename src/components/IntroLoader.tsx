@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 
-const WORDS = ["Justice", "Integrity", "Advocacy", "Trust"];
+const WORDS = ["Justice", "Advocacy", "Trust"];
 
 export default function IntroLoader({ onDone }: { onDone: () => void }) {
   const [index, setIndex] = useState(0);
@@ -13,10 +13,10 @@ export default function IntroLoader({ onDone }: { onDone: () => void }) {
   useEffect(() => {
     if (phase !== "words") return;
     if (index >= WORDS.length - 1) {
-      const t = setTimeout(() => setPhase("reveal"), 550);
+      const t = setTimeout(() => setPhase("reveal"), 400);
       return () => clearTimeout(t);
     }
-    const t = setTimeout(() => setIndex((i) => i + 1), 550);
+    const t = setTimeout(() => setIndex((i) => i + 1), 700);
     return () => clearTimeout(t);
   }, [index, phase]);
 

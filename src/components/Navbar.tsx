@@ -19,13 +19,12 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <motion.header
-      initial={{ y: -40, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.3 }}
-      className="fixed top-4 md:top-5 left-1/2 -translate-x-1/2 z-50"
-    >
-      <nav className="glass-pill flex items-center gap-2 md:gap-8 rounded-full px-5 md:px-7 py-2.5">
+    <header className="fixed top-4 md:top-5 left-1/2 -translate-x-1/2 z-50">
+      <motion.nav
+        initial={{ y: -40, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.3 }}
+        className="glass-pill flex items-center gap-2 md:gap-8 rounded-full px-5 md:px-7 py-2.5">
         <ul className="hidden md:flex items-center gap-7 text-sm text-mist font-medium">
           {LINKS.map((l) => {
             const active = pathname === l.href;
@@ -74,7 +73,7 @@ export default function Navbar() {
             />
           </span>
         </button>
-      </nav>
+      </motion.nav>
 
       {open && (
         <motion.div
@@ -97,6 +96,6 @@ export default function Navbar() {
           </ul>
         </motion.div>
       )}
-    </motion.header>
+    </header>
   );
 }
