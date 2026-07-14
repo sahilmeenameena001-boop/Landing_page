@@ -5,23 +5,23 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        ink: "#0A0E14",
+        ink: "#0B0D10",
         slate: {
-          950: "#0D1219",
-          900: "#121824",
+          950: "#0F1215",
+          900: "#151A1F",
         },
-        jade: {
-          400: "#3FCBA6",
-          500: "#22A98A",
-          600: "#17836B",
+        accent: {
+          400: "#7C93A8",
+          500: "#5D7A94",
+          600: "#48607A",
         },
-        plum: {
-          400: "#8C7BE0",
-          500: "#6E5CC9",
-          600: "#54459E",
+        brass: {
+          400: "#B79A6B",
+          500: "#A08655",
+          600: "#8A7146",
         },
-        ivory: "#EFEDE6",
-        mist: "#9AA7B5",
+        ivory: "#EDEBE4",
+        mist: "#93999E",
       },
       fontFamily: {
         display: ["var(--font-fraunces)", "serif"],
@@ -29,7 +29,7 @@ const config: Config = {
       },
       backgroundImage: {
         "grain-gradient":
-          "radial-gradient(circle at 20% 20%, rgba(63,203,166,0.10), transparent 40%), radial-gradient(circle at 80% 0%, rgba(110,92,201,0.12), transparent 45%), radial-gradient(circle at 50% 100%, rgba(63,203,166,0.08), transparent 50%)",
+          "radial-gradient(circle at 20% 20%, rgba(93,122,148,0.09), transparent 40%), radial-gradient(circle at 80% 0%, rgba(160,134,85,0.08), transparent 45%), radial-gradient(circle at 50% 100%, rgba(93,122,148,0.07), transparent 50%)",
       },
     },
   },

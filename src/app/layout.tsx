@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Fraunces, Manrope } from "next/font/google";
+import Chrome from "@/components/Chrome";
 import "./globals.css";
 
 const fraunces = Fraunces({
@@ -30,7 +31,7 @@ export default function RootLayout({
         className={`${fraunces.variable} ${manrope.variable} font-body antialiased bg-ink text-ivory overflow-x-hidden`}
       >
         <div className="noise-overlay" />
-        {children}
+        <Chrome>{children}</Chrome>
       </body>
     </html>
   );

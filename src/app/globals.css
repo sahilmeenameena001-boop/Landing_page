@@ -7,13 +7,13 @@ html {
 }
 
 body {
-  background-color: #0a0e14;
-  color: #efede6;
+  background-color: #0b0d10;
+  color: #edebe4;
 }
 
 ::selection {
-  background: #22a98a;
-  color: #0a0e14;
+  background: #5d7a94;
+  color: #0b0d10;
 }
 
 .glass-pill {
@@ -42,7 +42,7 @@ body {
 }
 
 .text-gradient {
-  background: linear-gradient(120deg, #3fcba6, #8c7be0);
+  background: linear-gradient(120deg, #a08655, #7c93a8);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;

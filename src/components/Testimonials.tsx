@@ -1,5 +1,6 @@
 "use client";
 
+import { motion } from "framer-motion";
 import Reveal from "./Reveal";
 
 const TESTIMONIALS = [
@@ -27,10 +28,10 @@ const AWARDS = ["Best Law Firm 2023", "Client Choice Award", "Top 10 Attorneys",
 
 export default function Testimonials() {
   return (
-    <section id="testimonials" className="relative px-6 py-28 md:py-36">
+    <section id="testimonials" className="relative px-6 pt-40 md:pt-44 pb-28 md:pb-32">
       <div className="max-w-6xl mx-auto">
         <Reveal className="text-center max-w-2xl mx-auto mb-16">
-          <span className="text-xs tracking-[0.3em] uppercase text-jade-400">
+          <span className="text-xs tracking-[0.3em] uppercase text-accent-400">
             Testimonials
           </span>
           <h2 className="font-display text-4xl md:text-5xl mt-4">
@@ -40,13 +41,19 @@ export default function Testimonials() {
 
         <div className="grid md:grid-cols-3 gap-6 mb-20">
           {TESTIMONIALS.map((t, i) => (
-            <Reveal key={t.name} delay={i * 0.1} className="glass-card rounded-2xl p-8 flex flex-col gap-5">
-              <span className="font-display text-5xl text-plum-400/60 leading-none">&ldquo;</span>
-              <p className="text-mist leading-relaxed -mt-6">{t.quote}</p>
-              <div>
-                <p className="font-semibold">{t.name}</p>
-                <p className="text-xs text-mist uppercase tracking-wide">{t.role}</p>
-              </div>
+            <Reveal key={t.name} delay={i * 0.1}>
+              <motion.div
+                whileHover={{ y: -8 }}
+                transition={{ type: "spring", stiffness: 260, damping: 20 }}
+                className="glass-card rounded-2xl p-8 flex flex-col gap-5 h-full"
+              >
+                <span className="font-display text-5xl text-brass-400/60 leading-none">&ldquo;</span>
+                <p className="text-mist leading-relaxed -mt-6">{t.quote}</p>
+                <div>
+                  <p className="font-semibold">{t.name}</p>
+                  <p className="text-xs text-mist uppercase tracking-wide">{t.role}</p>
+                </div>
+              </motion.div>
             </Reveal>
           ))}
         </div>

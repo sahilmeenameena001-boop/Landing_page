@@ -20,10 +20,10 @@ export default function IntroLoader({ onDone }: { onDone: () => void }) {
   useEffect(() => {
     if (phase !== "words") return;
     if (index >= WORDS.length - 1) {
-      const t = setTimeout(() => setPhase("reveal"), 500);
+      const t = setTimeout(() => setPhase("reveal"), 900);
       return () => clearTimeout(t);
     }
-    const t = setTimeout(() => setIndex((i) => i + 1), 420);
+    const t = setTimeout(() => setIndex((i) => i + 1), 950);
     return () => clearTimeout(t);
   }, [index, phase]);
 
@@ -32,7 +32,7 @@ export default function IntroLoader({ onDone }: { onDone: () => void }) {
     const t = setTimeout(() => {
       setPhase("done");
       onDone();
-    }, 1600);
+    }, 2200);
     return () => clearTimeout(t);
   }, [phase, onDone]);
 
@@ -47,41 +47,53 @@ export default function IntroLoader({ onDone }: { onDone: () => void }) {
           <div className="absolute inset-0 bg-grain-gradient" />
 
           {phase === "words" && (
-            <AnimatePresence mode="wait">
-              <motion.p
-                key={WORDS[index]}
-                initial={{ opacity: 0, y: 16, filter: "blur(6px)" }}
-                animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-                exit={{ opacity: 0, y: -16, filter: "blur(6px)" }}
-                transition={{ duration: 0.35, ease: "easeOut" }}
-                className="relative font-display italic text-4xl md:text-6xl tracking-wide text-ivory"
-              >
-                {WORDS[index]}
-              </motion.p>
-            </AnimatePresence>
+            <div className="relative flex flex-col items-center gap-8">
+              <AnimatePresence mode="wait">
+                <motion.p
+                  key={WORDS[index]}
+                  initial={{ opacity: 0, y: 16, filter: "blur(6px)" }}
+                  animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+                  exit={{ opacity: 0, y: -16, filter: "blur(6px)" }}
+                  transition={{ duration: 0.5, ease: "easeOut" }}
+                  className="relative font-display italic text-4xl md:text-6xl tracking-wide text-ivory"
+                >
+                  {WORDS[index]}
+                </motion.p>
+              </AnimatePresence>
+              <div className="flex items-center gap-2">
+                {WORDS.map((w, i) => (
+                  <span
+                    key={w}
+                    className={`h-1 rounded-full transition-all duration-500 ${
+                      i === index ? "w-6 bg-accent-400" : "w-1.5 bg-white/15"
+                    }`}
+                  />
+                ))}
+              </div>
+            </div>
           )}
 
           {phase === "reveal" && (
-            <motion.div className="relative flex flex-col items-center gap-5">
+            <motion.div className="relative flex flex-col items-center gap-6">
               <motion.div
                 initial={{ opacity: 0, scale: 0.85 }}
                 animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-                className="h-28 w-28 md:h-36 md:w-36 relative"
+                transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
+                className="h-40 w-40 md:h-52 md:w-52 relative"
               >
                 <Image
-                  src="/logo.png"
+                  src="/logo-final.png"
                   alt="Lex & Co. crest"
                   fill
-                  sizes="144px"
-                  className="object-contain drop-shadow-[0_0_30px_rgba(63,203,166,0.35)]"
+                  sizes="208px"
+                  className="object-contain drop-shadow-[0_0_36px_rgba(93,122,148,0.35)]"
                   priority
                 />
               </motion.div>
               <motion.h1
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.35, duration: 0.7 }}
+                transition={{ delay: 0.4, duration: 0.7 }}
                 className="font-display text-3xl md:text-5xl tracking-[0.08em]"
               >
                 Lex<span className="text-gradient">&amp;</span>Co.

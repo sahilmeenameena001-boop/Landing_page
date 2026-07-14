@@ -27,10 +27,10 @@ export default function FAQ() {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <section className="relative px-6 py-28 md:py-36">
+    <section className="relative px-6 pt-8 md:pt-12 pb-28 md:pb-32">
       <div className="max-w-3xl mx-auto">
         <Reveal className="text-center mb-14">
-          <span className="text-xs tracking-[0.3em] uppercase text-plum-400">FAQ</span>
+          <span className="text-xs tracking-[0.3em] uppercase text-brass-400">FAQ</span>
           <h2 className="font-display text-4xl md:text-5xl mt-4">
             Common <span className="italic text-gradient">Questions</span>
           </h2>
@@ -49,7 +49,7 @@ export default function FAQ() {
                   <motion.span
                     animate={{ rotate: isOpen ? 45 : 0 }}
                     transition={{ duration: 0.3 }}
-                    className="text-jade-400 text-2xl leading-none shrink-0"
+                    className="text-accent-400 text-2xl leading-none shrink-0"
                   >
                     +
                   </motion.span>

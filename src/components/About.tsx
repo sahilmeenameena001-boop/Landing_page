@@ -4,10 +4,10 @@ import Reveal from "./Reveal";
 
 export default function About() {
   return (
-    <section id="about" className="relative px-6 py-28 md:py-36">
+    <section id="about" className="relative px-6 pt-40 md:pt-44 pb-28 md:pb-32">
       <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-14 items-center">
         <Reveal>
-          <span className="text-xs tracking-[0.3em] uppercase text-plum-400">
+          <span className="text-xs tracking-[0.3em] uppercase text-brass-400">
             About Lex&amp;Co.
           </span>
           <h2 className="font-display text-4xl md:text-5xl mt-4 leading-tight">
@@ -25,11 +25,11 @@ export default function About() {
           </p>
           <div className="flex gap-8 mt-8">
             <div>
-              <p className="font-display text-2xl text-jade-400">Justice</p>
+              <p className="font-display text-2xl text-accent-400">Justice</p>
               <p className="text-mist text-sm mt-1">Our foundation</p>
             </div>
             <div>
-              <p className="font-display text-2xl text-plum-400">Trust</p>
+              <p className="font-display text-2xl text-brass-400">Trust</p>
               <p className="text-mist text-sm mt-1">Our practice</p>
             </div>
           </div>

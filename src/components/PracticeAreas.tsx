@@ -24,10 +24,10 @@ const AREAS = [
 
 export default function PracticeAreas() {
   return (
-    <section id="practice" className="relative px-6 py-28 md:py-36">
+    <section id="practice" className="relative px-6 pt-40 md:pt-44 pb-28 md:pb-32">
       <div className="max-w-6xl mx-auto">
         <Reveal className="text-center max-w-2xl mx-auto mb-16">
-          <span className="text-xs tracking-[0.3em] uppercase text-jade-400">
+          <span className="text-xs tracking-[0.3em] uppercase text-accent-400">
             How We Can Help
           </span>
           <h2 className="font-display text-4xl md:text-5xl mt-4">
@@ -43,7 +43,7 @@ export default function PracticeAreas() {
                 transition={{ type: "spring", stiffness: 260, damping: 20 }}
                 className="glass-card rounded-2xl p-7 h-full flex flex-col gap-4"
               >
-                <span className="font-display text-3xl text-plum-400">
+                <span className="font-display text-3xl text-brass-400">
                   {String(i + 1).padStart(2, "0")}
                 </span>
                 <h3 className="font-display text-xl">{a.title}</h3>

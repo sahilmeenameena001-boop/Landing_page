@@ -7,10 +7,10 @@ export default function Contact() {
   const [sent, setSent] = useState(false);
 
   return (
-    <section id="contact" className="relative px-6 py-28 md:py-36">
+    <section id="contact" className="relative px-6 pt-40 md:pt-44 pb-28 md:pb-32">
       <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-14">
         <Reveal>
-          <span className="text-xs tracking-[0.3em] uppercase text-jade-400">Contact</span>
+          <span className="text-xs tracking-[0.3em] uppercase text-accent-400">Contact</span>
           <h2 className="font-display text-4xl md:text-5xl mt-4 leading-tight">
             Let&rsquo;s Discuss <span className="italic text-gradient">Your Case</span>
           </h2>
@@ -51,23 +51,23 @@ export default function Contact() {
               <input
                 required
                 placeholder="Your Name"
-                className="bg-white/5 border border-white/10 rounded-xl px-4 py-3 outline-none focus:border-jade-400/50 transition-colors placeholder:text-mist"
+                className="bg-white/5 border border-white/10 rounded-xl px-4 py-3 outline-none focus:border-accent-400/50 transition-colors placeholder:text-mist"
               />
               <input
                 required
                 type="email"
                 placeholder="Email Address"
-                className="bg-white/5 border border-white/10 rounded-xl px-4 py-3 outline-none focus:border-jade-400/50 transition-colors placeholder:text-mist"
+                className="bg-white/5 border border-white/10 rounded-xl px-4 py-3 outline-none focus:border-accent-400/50 transition-colors placeholder:text-mist"
               />
               <textarea
                 required
                 placeholder="Message"
                 rows={5}
-                className="bg-white/5 border border-white/10 rounded-xl px-4 py-3 outline-none focus:border-jade-400/50 transition-colors placeholder:text-mist resize-none"
+                className="bg-white/5 border border-white/10 rounded-xl px-4 py-3 outline-none focus:border-accent-400/50 transition-colors placeholder:text-mist resize-none"
               />
               <button
                 type="submit"
-                className="rounded-full bg-jade-500 hover:bg-jade-400 transition-colors text-ink font-semibold px-8 py-3.5"
+                className="rounded-full bg-accent-500 hover:bg-accent-400 transition-colors text-ink font-semibold px-8 py-3.5"
               >
                 Send Message
               </button>

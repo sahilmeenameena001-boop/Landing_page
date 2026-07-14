@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 import Reveal from "./Reveal";
 
 const STATS = [
@@ -12,21 +13,18 @@ const STATS = [
 
 export default function Hero() {
   return (
-    <section
-      id="home"
-      className="relative min-h-screen flex flex-col items-center justify-center px-6 pt-32 pb-20 overflow-hidden"
-    >
+    <section className="relative min-h-screen flex flex-col items-center justify-center px-6 pt-40 md:pt-36 pb-20 overflow-hidden">
       <div className="absolute inset-0 bg-grain-gradient" />
       <motion.div
         aria-hidden
-        className="absolute -top-40 left-1/2 -translate-x-1/2 h-[36rem] w-[36rem] rounded-full bg-jade-500/10 blur-3xl"
+        className="absolute -top-40 left-1/2 -translate-x-1/2 h-[36rem] w-[36rem] rounded-full bg-accent-500/10 blur-3xl"
         animate={{ scale: [1, 1.08, 1], opacity: [0.5, 0.8, 0.5] }}
         transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
       />
 
       <div className="relative max-w-4xl text-center flex flex-col items-center gap-6">
         <Reveal>
-          <span className="inline-flex items-center gap-2 text-xs tracking-[0.3em] uppercase text-jade-400 border border-jade-400/30 rounded-full px-4 py-1.5">
+          <span className="inline-flex items-center gap-2 text-xs tracking-[0.3em] uppercase text-accent-400 border border-accent-400/30 rounded-full px-4 py-1.5">
             Trusted Legal Excellence Since 2008
           </span>
         </Reveal>
@@ -48,18 +46,18 @@ export default function Hero() {
         </Reveal>
 
         <Reveal delay={0.3} className="flex flex-col sm:flex-row gap-4 mt-2">
-          <a
-            href="#contact"
-            className="rounded-full bg-jade-500 hover:bg-jade-400 transition-colors text-ink font-semibold px-8 py-3.5"
+          <Link
+            href="/contact"
+            className="rounded-full bg-accent-500 hover:bg-accent-400 transition-colors text-ink font-semibold px-8 py-3.5"
           >
             Free Consultation
-          </a>
-          <a
-            href="#practice"
-            className="rounded-full glass-card hover:border-plum-400/40 transition-colors px-8 py-3.5 font-medium"
+          </Link>
+          <Link
+            href="/practice"
+            className="rounded-full glass-card hover:border-brass-400/40 transition-colors px-8 py-3.5 font-medium"
           >
             Our Practice Areas
-          </a>
+          </Link>
         </Reveal>
       </div>
 
