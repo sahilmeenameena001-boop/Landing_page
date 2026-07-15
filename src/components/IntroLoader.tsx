@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 
-const WORDS = ["Justice", "Advocacy", "Trust"];
+const WORDS = ["Justice", "Integrity", "Advocacy", "Diligence", "Trust", "Excellence"];
 
 export default function IntroLoader({ onDone }: { onDone: () => void }) {
   const [index, setIndex] = useState(0);
@@ -16,7 +16,7 @@ export default function IntroLoader({ onDone }: { onDone: () => void }) {
       const t = setTimeout(() => setPhase("reveal"), 400);
       return () => clearTimeout(t);
     }
-    const t = setTimeout(() => setIndex((i) => i + 1), 700);
+    const t = setTimeout(() => setIndex((i) => i + 1), 1100);
     return () => clearTimeout(t);
   }, [index, phase]);
 
@@ -52,7 +52,7 @@ export default function IntroLoader({ onDone }: { onDone: () => void }) {
                   initial={{ opacity: 0, scale: 0.92, y: 10, filter: "blur(8px)" }}
                   animate={{ opacity: 1, scale: 1, y: 0, filter: "blur(0px)" }}
                   exit={{ opacity: 0, scale: 1.04, y: -10, filter: "blur(8px)" }}
-                  transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
+                  transition={{ duration: 0.55, ease: [0.16, 1, 0.3, 1] }}
                   className="relative font-display italic text-5xl md:text-7xl tracking-wide text-ivory"
                 >
                   {WORDS[index]}

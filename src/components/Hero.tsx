@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Reveal from "./Reveal";
+import StatCounter from "./StatCounter";
 
 const STATS = [
   { value: "15+", label: "Years Experience" },
@@ -66,12 +67,17 @@ export default function Hero() {
         className="relative grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10 mt-20 w-full max-w-4xl"
       >
         {STATS.map((s) => (
-          <div key={s.label} className="text-center glass-card rounded-2xl py-6 px-2">
-            <p className="font-display text-3xl md:text-4xl text-gradient">{s.value}</p>
+          <motion.div
+            key={s.label}
+            whileHover={{ y: -6 }}
+            transition={{ type: "spring", stiffness: 260, damping: 20 }}
+            className="text-center glass-card rounded-2xl py-6 px-2"
+          >
+            <StatCounter value={s.value} />
             <p className="text-mist text-xs md:text-sm mt-2 tracking-wide uppercase">
               {s.label}
             </p>
-          </div>
+          </motion.div>
         ))}
       </Reveal>
     </section>
