@@ -31,14 +31,14 @@ export default function Testimonials() {
       <div className="max-w-6xl mx-auto">
         <Reveal className="text-center max-w-2xl mx-auto mb-16">
           <span className="text-xs tracking-[0.3em] uppercase text-accent-400">
-            Testimonials
+            Rana & Co.
           </span>
           <h2 className="font-display text-4xl md:text-5xl mt-4">
             Voices of <span className="italic text-gradient">Trust</span>
           </h2>
           <p className="text-mist text-lg leading-relaxed mt-5">
-            98% client satisfaction isn&rsquo;t a slogan — it&rsquo;s what our
-            clients tell us after their case is resolved.
+            Elite corporations and financial institutions trust A.P. RANA & CO because we align legal strategy with
+ultimate commercial objectives.
           </p>
         </Reveal>
 
