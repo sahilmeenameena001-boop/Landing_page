@@ -9,8 +9,8 @@ const LINKS = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
   { href: "/practice", label: "Practice" },
-  { href: "/results", label: "Results" },
-  { href: "/testimonials", label: "Testimonials" },
+  { href: "/results", label: "Our People" },
+  { href: "/testimonials", label: "Why Rana & Co." },
   { href: "/contact", label: "Contact" },
 ];
 
