@@ -30,17 +30,7 @@ interests.
 Whether you require legal advice, documentation,
 negotiations, arbitration, or courtroom representation,
 we are committed to delivering effective legal support
-tailored to your needs.
-intersection of meticulous research, relentless
-advocacy, and forensic financial preparedness. Legal
-arguments that are not grounded in financial reality are
-vulnerable. At A.P. RANA & CO, they are not.
-intersection of meticulous research, relentless advocacy, and forensic financial preparedness. Legal
-arguments that are not grounded in financial reality are vulnerable. At A.P. RANA & CO, they are not.
-By bridging the Delhi-UP legal corridor, A.P. RANA & CO offers an operational advantage that few firms
-can replicate deep-rooted bar networks and trial experience across Saket Courts, the NCLT, the Debt
-Recovery Tribunal, and the Meerut District and Sessions Court. High-volume institutional mandates are
-executed with precision, speed, and zero administrative delay.     
+tailored to your needs.     
           </p>
           <div className="flex gap-8 mt-8">
             <div>
