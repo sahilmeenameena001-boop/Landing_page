@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Reveal from "./Reveal";
+import { AWARDS } from "@/lib/firm";
 
 const TESTIMONIALS = [
   {
@@ -23,8 +24,6 @@ const TESTIMONIALS = [
       "Going through a divorce was difficult, but the team at Lex&Co. made the process manageable.",
   },
 ];
-
-const AWARDS = ["Best Law Firm 2023", "Client Choice Award", "Top 10 Attorneys", "Excellence in Advocacy"];
 
 export default function Testimonials() {
   return (

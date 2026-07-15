@@ -1,6 +1,10 @@
 "use client";
 
+import { motion } from "framer-motion";
+import Link from "next/link";
 import Reveal from "./Reveal";
+import StatCounter from "./StatCounter";
+import { STATS, AWARDS } from "@/lib/firm";
 
 export default function About() {
   return (
@@ -35,6 +39,47 @@ export default function About() {
           </div>
         </Reveal>
       </div>
+
+      <Reveal
+        delay={0.25}
+        className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10 mt-20"
+      >
+        {STATS.map((s) => (
+          <motion.div
+            key={s.label}
+            whileHover={{ y: -6 }}
+            transition={{ type: "spring", stiffness: 260, damping: 20 }}
+            className="text-center glass-card rounded-2xl py-6 px-2"
+          >
+            <StatCounter value={s.value} />
+            <p className="text-mist text-xs md:text-sm mt-2 tracking-wide uppercase">
+              {s.label}
+            </p>
+          </motion.div>
+        ))}
+      </Reveal>
+
+      <Reveal delay={0.35} className="max-w-5xl mx-auto mt-16">
+        <p className="text-xs tracking-[0.3em] uppercase text-brass-400 text-center mb-6">
+          Recognized Excellence
+        </p>
+        <div className="flex flex-wrap justify-center gap-4">
+          {AWARDS.map((a) => (
+            <span key={a} className="glass-card rounded-full px-6 py-2.5 text-sm text-mist">
+              {a}
+            </span>
+          ))}
+        </div>
+      </Reveal>
+
+      <Reveal delay={0.45} className="flex justify-center mt-16">
+        <Link
+          href="/practice"
+          className="rounded-full bg-accent-500 hover:bg-accent-400 transition-colors text-ink font-semibold px-8 py-3.5"
+        >
+          Explore Our Practice Areas
+        </Link>
+      </Reveal>
     </section>
   );
 }
