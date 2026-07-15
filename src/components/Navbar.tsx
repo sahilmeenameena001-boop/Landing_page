@@ -24,7 +24,7 @@ export default function Navbar() {
         initial={{ y: -40, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.3 }}
-        className="glass-pill flex items-center gap-2 md:gap-8 rounded-full px-5 md:px-7 py-2.5">
+        className="bg-paper border border-ink/10 flex items-center gap-2 md:gap-8 rounded-full px-5 md:px-7 py-2.5 shadow-sm">
         <ul className="hidden md:flex items-center gap-7 text-sm text-mist font-medium">
           {LINKS.map((l) => {
             const active = pathname === l.href;
@@ -79,7 +79,7 @@ export default function Navbar() {
         <motion.div
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
-          className="glass-pill mt-3 rounded-3xl px-6 py-5 md:hidden"
+          className="bg-paper mt-3 rounded-3xl px-6 py-5 md:hidden border border-ink/10"
         >
           <ul className="flex flex-col gap-4 text-mist font-medium text-center">
             {LINKS.map((l) => (
