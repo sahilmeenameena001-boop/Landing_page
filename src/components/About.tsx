@@ -17,15 +17,20 @@ export default function About() {
           <h2 className="font-display text-4xl md:text-5xl mt-4 leading-tight">
             Dedicated to Justice.
             <br />
-            <span className="italic text-gradient">Committed to You.</span>
+            <span className="italic text-gradient">A Firm Built for High-Stakes Mandates.</span>
           </h2>
         </Reveal>
         <Reveal delay={0.15}>
           <p className="text-mist text-lg leading-relaxed">
-            With over 15 years of experience, our firm delivers personalized
-            legal services tailored to achieve the best outcomes for our
-            clients — grounded in discretion, precision, and an unwavering
-            commitment to advocacy.
+            At A.P. Rana & Co. (Legal), we provide comprehensive
+legal services with professionalism, integrity, and
+dedication. Our approach combines legal expertise with
+practical solutions to protect our clients' rights and
+interests.
+Whether you require legal advice, documentation,
+negotiations, arbitration, or courtroom representation,
+we are committed to delivering effective legal support
+tailored to your needs.
           </p>
           <div className="flex gap-8 mt-8">
             <div>
