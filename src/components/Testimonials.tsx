@@ -36,6 +36,10 @@ export default function Testimonials() {
           <h2 className="font-display text-4xl md:text-5xl mt-4">
             Voices of <span className="italic text-gradient">Trust</span>
           </h2>
+          <p className="text-mist text-lg leading-relaxed mt-5">
+            98% client satisfaction isn&rsquo;t a slogan — it&rsquo;s what our
+            clients tell us after their case is resolved.
+          </p>
         </Reveal>
 
         <div className="grid md:grid-cols-3 gap-6 mb-20">

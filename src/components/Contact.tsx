@@ -14,6 +14,10 @@ export default function Contact() {
           <h2 className="font-display text-4xl md:text-5xl mt-4 leading-tight">
             Let&rsquo;s Discuss <span className="italic text-gradient">Your Case</span>
           </h2>
+          <p className="text-mist text-lg leading-relaxed mt-5">
+            Free initial consultations, a response within 24 hours, and 24/7
+            emergency assistance when you need us most.
+          </p>
           <div className="mt-8 flex flex-col gap-5 text-mist">
             <div>
               <p className="text-ink font-semibold">Phone</p>

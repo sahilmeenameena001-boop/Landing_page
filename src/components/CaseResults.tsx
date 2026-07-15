@@ -2,6 +2,8 @@
 
 import { motion } from "framer-motion";
 import Reveal from "./Reveal";
+import StatCounter from "./StatCounter";
+import { STATS } from "@/lib/firm";
 
 const RESULTS = [
   { amount: "$2.5M", type: "Personal Injury", desc: "Settlement for car accident injury." },
@@ -21,6 +23,10 @@ export default function CaseResults() {
           <h2 className="font-display text-4xl md:text-5xl mt-4">
             A Record That <span className="italic text-gradient">Speaks</span>
           </h2>
+          <p className="text-mist text-lg leading-relaxed mt-5">
+            Over 15+ years and 500+ cases won, our team has secured
+            significant recoveries for clients across every practice area.
+          </p>
         </Reveal>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -38,6 +44,25 @@ export default function CaseResults() {
             </Reveal>
           ))}
         </div>
+
+        <Reveal
+          delay={0.4}
+          className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10 mt-16"
+        >
+          {STATS.map((s) => (
+            <motion.div
+              key={s.label}
+              whileHover={{ y: -6 }}
+              transition={{ type: "spring", stiffness: 260, damping: 20 }}
+              className="text-center glass-card rounded-2xl py-6 px-2"
+            >
+              <StatCounter value={s.value} />
+              <p className="text-mist text-xs md:text-sm mt-2 tracking-wide uppercase">
+                {s.label}
+              </p>
+            </motion.div>
+          ))}
+        </Reveal>
       </div>
     </section>
   );
