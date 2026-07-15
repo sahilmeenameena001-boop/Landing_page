@@ -5,23 +5,19 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        ink: "#0A0B0F",
-        slate: {
-          950: "#101116",
-          900: "#171921",
-        },
+        paper: "#F4E9D7",
+        ink: "#2B1F16",
         accent: {
-          400: "#E3C589",
-          500: "#C9A227",
-          600: "#9C7A1D",
+          400: "#C9A227",
+          500: "#A9791C",
+          600: "#8A6216",
         },
         brass: {
-          400: "#6E8AA3",
-          500: "#4A6580",
-          600: "#35485C",
+          400: "#A24E42",
+          500: "#7C3B32",
+          600: "#5E2C25",
         },
-        ivory: "#F3EFE6",
-        mist: "#9B968F",
+        mist: "#7A6A58",
       },
       fontFamily: {
         display: ["var(--font-fraunces)", "serif"],
@@ -29,7 +25,7 @@ const config: Config = {
       },
       backgroundImage: {
         "grain-gradient":
-          "radial-gradient(circle at 20% 20%, rgba(201,162,39,0.10), transparent 40%), radial-gradient(circle at 80% 0%, rgba(74,101,128,0.09), transparent 45%), radial-gradient(circle at 50% 100%, rgba(201,162,39,0.06), transparent 50%)",
+          "radial-gradient(circle at 20% 20%, rgba(169,121,28,0.12), transparent 40%), radial-gradient(circle at 80% 0%, rgba(124,59,50,0.08), transparent 45%), radial-gradient(circle at 50% 100%, rgba(169,121,28,0.08), transparent 50%)",
       },
     },
   },

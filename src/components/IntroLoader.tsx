@@ -33,7 +33,7 @@ export default function IntroLoader({ onDone }: { onDone: () => void }) {
     <AnimatePresence>
       {phase !== "done" && (
         <motion.div
-          className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-ink overflow-hidden"
+          className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-paper overflow-hidden"
           exit={{ opacity: 0, filter: "blur(12px)" }}
           transition={{ duration: 0.6, ease: "easeInOut" }}
         >
@@ -53,7 +53,7 @@ export default function IntroLoader({ onDone }: { onDone: () => void }) {
                   animate={{ opacity: 1, scale: 1, y: 0, filter: "blur(0px)" }}
                   exit={{ opacity: 0, scale: 1.04, y: -10, filter: "blur(8px)" }}
                   transition={{ duration: 0.55, ease: [0.16, 1, 0.3, 1] }}
-                  className="relative font-display italic text-5xl md:text-7xl tracking-wide text-ivory"
+                  className="relative font-display italic text-5xl md:text-7xl tracking-wide text-ink"
                 >
                   {WORDS[index]}
                   <motion.span
@@ -69,7 +69,7 @@ export default function IntroLoader({ onDone }: { onDone: () => void }) {
                   <span
                     key={w}
                     className={`h-1 rounded-full transition-all duration-300 ${
-                      i === index ? "w-6 bg-accent-400" : "w-1.5 bg-white/15"
+                      i === index ? "w-6 bg-accent-400" : "w-1.5 bg-ink/15"
                     }`}
                   />
                 ))}
@@ -97,7 +97,7 @@ export default function IntroLoader({ onDone }: { onDone: () => void }) {
                   alt="Lex & Co. crest"
                   fill
                   sizes="208px"
-                  className="object-contain drop-shadow-[0_0_36px_rgba(93,122,148,0.4)]"
+                  className="object-contain drop-shadow-[0_0_36px_rgba(169,121,28,0.4)]"
                   priority
                 />
               </motion.div>

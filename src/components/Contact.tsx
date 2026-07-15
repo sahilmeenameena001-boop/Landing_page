@@ -16,19 +16,19 @@ export default function Contact() {
           </h2>
           <div className="mt-8 flex flex-col gap-5 text-mist">
             <div>
-              <p className="text-ivory font-semibold">Phone</p>
+              <p className="text-ink font-semibold">Phone</p>
               <p>(555) 123-4567 &middot; Mon&ndash;Fri 9am&ndash;6pm</p>
             </div>
             <div>
-              <p className="text-ivory font-semibold">Email</p>
+              <p className="text-ink font-semibold">Email</p>
               <p>info@lexcolaw.com &middot; response within 24 hours</p>
             </div>
             <div>
-              <p className="text-ivory font-semibold">Address</p>
+              <p className="text-ink font-semibold">Address</p>
               <p>123 Legal Street, Suite 100, New York, NY 10001</p>
             </div>
             <div>
-              <p className="text-ivory font-semibold">Emergency</p>
+              <p className="text-ink font-semibold">Emergency</p>
               <p>24/7 support available</p>
             </div>
           </div>
@@ -51,19 +51,19 @@ export default function Contact() {
               <input
                 required
                 placeholder="Your Name"
-                className="bg-white/5 border border-white/10 rounded-xl px-4 py-3 outline-none focus:border-accent-400/50 transition-colors placeholder:text-mist"
+                className="bg-ink/5 border border-ink/10 rounded-xl px-4 py-3 outline-none focus:border-accent-400/50 transition-colors placeholder:text-mist"
               />
               <input
                 required
                 type="email"
                 placeholder="Email Address"
-                className="bg-white/5 border border-white/10 rounded-xl px-4 py-3 outline-none focus:border-accent-400/50 transition-colors placeholder:text-mist"
+                className="bg-ink/5 border border-ink/10 rounded-xl px-4 py-3 outline-none focus:border-accent-400/50 transition-colors placeholder:text-mist"
               />
               <textarea
                 required
                 placeholder="Message"
                 rows={5}
-                className="bg-white/5 border border-white/10 rounded-xl px-4 py-3 outline-none focus:border-accent-400/50 transition-colors placeholder:text-mist resize-none"
+                className="bg-ink/5 border border-ink/10 rounded-xl px-4 py-3 outline-none focus:border-accent-400/50 transition-colors placeholder:text-mist resize-none"
               />
               <button
                 type="submit"

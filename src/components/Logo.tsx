@@ -23,7 +23,7 @@ export default function Logo() {
             priority
           />
         </div>
-        <span className="hidden sm:block font-display text-base md:text-lg tracking-[0.12em] text-ivory">
+        <span className="hidden sm:block font-display text-base md:text-lg tracking-[0.12em] text-ink">
           LEX&amp;CO.
         </span>
       </Link>

@@ -48,7 +48,7 @@ export default function Footer() {
   const [subscribed, setSubscribed] = useState(false);
 
   return (
-    <footer className="relative px-6 pt-20 pb-10 border-t border-white/10">
+    <footer className="relative px-6 pt-20 pb-10 border-t border-ink/10">
       <div className="max-w-6xl mx-auto flex flex-col gap-14">
         <Reveal className="grid md:grid-cols-[1.4fr_1fr_1fr_1.3fr] gap-10">
           <div className="flex flex-col gap-4">
@@ -73,7 +73,7 @@ export default function Footer() {
                   whileHover={{ y: -3, scale: 1.08 }}
                   whileTap={{ scale: 0.94 }}
                   transition={{ type: "spring", stiffness: 300, damping: 18 }}
-                  className="flex h-9 w-9 items-center justify-center rounded-full border border-white/10 text-mist hover:text-ivory hover:border-accent-400/40 transition-colors"
+                  className="flex h-9 w-9 items-center justify-center rounded-full border border-ink/10 text-mist hover:text-ink hover:border-accent-400/40 transition-colors"
                 >
                   <svg viewBox="0 0 24 24" className="h-4 w-4 fill-current">
                     <path d={s.path} />
@@ -88,7 +88,7 @@ export default function Footer() {
             <ul className="flex flex-col gap-2.5 text-sm text-mist">
               {LINKS.map((l) => (
                 <li key={l.href}>
-                  <Link href={l.href} className="hover:text-ivory transition-colors">
+                  <Link href={l.href} className="hover:text-ink transition-colors">
                     {l.label}
                   </Link>
                 </li>
@@ -101,7 +101,7 @@ export default function Footer() {
             <ul className="flex flex-col gap-2.5 text-sm text-mist">
               {PRACTICE_LINKS.map((p) => (
                 <li key={p}>
-                  <Link href="/practice" className="hover:text-ivory transition-colors">
+                  <Link href="/practice" className="hover:text-ink transition-colors">
                     {p}
                   </Link>
                 </li>
@@ -128,7 +128,7 @@ export default function Footer() {
                   required
                   type="email"
                   placeholder="Email address"
-                  className="min-w-0 flex-1 bg-white/5 border border-white/10 rounded-full px-4 py-2.5 text-sm outline-none focus:border-accent-400/50 transition-colors placeholder:text-mist"
+                  className="min-w-0 flex-1 bg-ink/5 border border-ink/10 rounded-full px-4 py-2.5 text-sm outline-none focus:border-accent-400/50 transition-colors placeholder:text-mist"
                 />
                 <motion.button
                   type="submit"
@@ -143,7 +143,7 @@ export default function Footer() {
           </div>
         </Reveal>
 
-        <div className="flex flex-col md:flex-row items-center justify-between gap-3 text-sm text-mist border-t border-white/10 pt-8">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-3 text-sm text-mist border-t border-ink/10 pt-8">
           <p>&copy; 2026 Lex&amp;Co. All rights reserved.</p>
           <p>123 Legal Street, Suite 100, New York, NY 10001</p>
         </div>

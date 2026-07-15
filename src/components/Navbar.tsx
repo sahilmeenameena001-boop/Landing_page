@@ -32,8 +32,8 @@ export default function Navbar() {
               <li key={l.href}>
                 <Link
                   href={l.href}
-                  className={`relative transition-colors hover:text-ivory ${
-                    active ? "text-ivory" : ""
+                  className={`relative transition-colors hover:text-ink ${
+                    active ? "text-ink" : ""
                   }`}
                 >
                   {l.label}
@@ -60,16 +60,16 @@ export default function Navbar() {
           onClick={() => setOpen((o) => !o)}
           className="md:hidden flex items-center gap-2 py-0.5"
         >
-          <span className="font-display text-sm tracking-[0.1em] text-ivory">MENU</span>
+          <span className="font-display text-sm tracking-[0.1em] text-ink">MENU</span>
           <span className="relative h-4 w-5 shrink-0">
             <span
-              className={`absolute left-0 h-px w-5 bg-ivory transition-all duration-300 ${open ? "top-2 rotate-45" : "top-0.5"}`}
+              className={`absolute left-0 h-px w-5 bg-ink transition-all duration-300 ${open ? "top-2 rotate-45" : "top-0.5"}`}
             />
             <span
-              className={`absolute left-0 top-2 h-px w-5 bg-ivory transition-opacity duration-300 ${open ? "opacity-0" : "opacity-100"}`}
+              className={`absolute left-0 top-2 h-px w-5 bg-ink transition-opacity duration-300 ${open ? "opacity-0" : "opacity-100"}`}
             />
             <span
-              className={`absolute left-0 h-px w-5 bg-ivory transition-all duration-300 ${open ? "top-2 -rotate-45" : "top-3.5"}`}
+              className={`absolute left-0 h-px w-5 bg-ink transition-all duration-300 ${open ? "top-2 -rotate-45" : "top-3.5"}`}
             />
           </span>
         </button>
@@ -87,7 +87,7 @@ export default function Navbar() {
                 <Link
                   href={l.href}
                   onClick={() => setOpen(false)}
-                  className={pathname === l.href ? "text-ivory" : "hover:text-ivory"}
+                  className={pathname === l.href ? "text-ink" : "hover:text-ink"}
                 >
                   {l.label}
                 </Link>

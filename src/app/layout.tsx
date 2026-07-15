@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${fraunces.variable} ${manrope.variable} font-body antialiased bg-ink text-ivory overflow-x-hidden`}
+        className={`${fraunces.variable} ${manrope.variable} font-body antialiased bg-paper text-ink overflow-x-hidden`}
       >
         <div className="noise-overlay" />
         <Chrome>{children}</Chrome>
