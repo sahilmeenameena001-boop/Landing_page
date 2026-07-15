@@ -21,7 +21,7 @@ export default function Contact() {
           <div className="mt-8 flex flex-col gap-5 text-mist">
             <div>
               <p className="text-ink font-semibold">Phone</p>
-              <p>(555) 123-4567 &middot; Mon&ndash;Fri 9am&ndash;6pm</p>
+              <p>(+91) 9870570037 &middot; Mon&ndash;Fri 9am&ndash;6pm</p>
             </div>
             <div>
               <p className="text-ink font-semibold">Email</p>
