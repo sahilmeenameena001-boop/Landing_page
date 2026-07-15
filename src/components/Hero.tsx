@@ -21,7 +21,7 @@ export default function Hero() {
 
       <div className="relative max-w-4xl text-center flex flex-col items-center gap-6">
         <Reveal>
-          <span className="inline-flex items-center gap-2 text-xs tracking-[0.3em] uppercase text-accent-400 border border-accent-400/30 rounded-full px-4 py-1.5">
+          <span className="inline-flex items-center gap-2 text-sm md:text-base tracking-[0.3em] uppercase text-accent-400 border border-accent-400/30 rounded-full px-4 py-1.5">
             Trusted Legal Excellence Since 2008
           </span>
         </Reveal>
