@@ -25,11 +25,11 @@ export default function Contact() {
             </div>
             <div>
               <p className="text-ink font-semibold">Email</p>
-              <p>info@lexcolaw.com &middot; response within 24 hours</p>
+              <p>advocatenikhilrana@gmail.com &middot; response within 24 hours</p>
             </div>
             <div>
               <p className="text-ink font-semibold">Address</p>
-              <p>123 Legal Street, Suite 100, New York, NY 10001</p>
+              <p>A.P.Rana & Co. (Legal) Chamber No. 530, Lawyer's Chamber Block, saket Court Complex, Saket, New DElhi 110017 </p>
             </div>
             <div>
               <p className="text-ink font-semibold">Emergency</p>
