@@ -3,31 +3,22 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion, useScroll, useSpring } from "framer-motion";
 import { usePathname } from "next/navigation";
-import IntroLoader from "./IntroLoader";
+// IntroLoader removed from automatic rendering to disable opening reveal
 import Logo from "./Logo";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 
 export default function Chrome({ children }: { children: React.ReactNode }) {
-  const [showIntro, setShowIntro] = useState(true);
+  useState;
   const pathname = usePathname();
   const { scrollYProgress } = useScroll();
   const progress = useSpring(scrollYProgress, { stiffness: 120, damping: 24 });
 
-  useEffect(() => {
-    if (sessionStorage.getItem("lexco-intro-seen")) {
-      setShowIntro(false);
-    }
-  }, []);
-
-  const finishIntro = () => {
-    sessionStorage.setItem("lexco-intro-seen", "1");
-    setShowIntro(false);
-  };
+  // IntroLoader usage disabled — reveal removed
 
   return (
     <>
-      {showIntro && <IntroLoader onDone={finishIntro} />}
+      {/* IntroLoader removed */}
       <motion.div
         className="fixed top-0 left-0 right-0 h-[2px] bg-accent-400 origin-left z-[60]"
         style={{ scaleX: progress }}
