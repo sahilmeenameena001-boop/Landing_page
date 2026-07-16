@@ -25,7 +25,7 @@ export default function Navbar() {
         initial={{ y: -40, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.3 }}
-        className="bg-paper border border-ink/10 flex items-center gap-2 md:gap-8 rounded-full px-5 md:px-7 py-2.5 shadow-sm">
+        className="bg-paper border border-ink/10 flex items-center gap-2 md:gap-8 rounded-full px-5 md:px-7 py-3 shadow-sm">
         <ul className="hidden md:flex items-center gap-7 text-sm text-mist font-medium">
           {LINKS.map((l) => {
             const active = pathname === l.href;
