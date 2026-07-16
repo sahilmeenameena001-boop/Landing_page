@@ -17,7 +17,7 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Lex & Co. | Attorneys at Law",
+  title: "A.P. RANA & CO. | Attorneys at Law",
   description:
     "Trusted legal excellence since 2008. Experienced. Dedicated. Relentless.",
 };

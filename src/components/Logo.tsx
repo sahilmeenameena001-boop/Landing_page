@@ -24,7 +24,7 @@ export default function Logo() {
           />
         </div>
         <span className="hidden sm:block font-display text-base md:text-lg tracking-[0.12em] text-ink">
-          LEX&amp;CO.
+          A.P. RANA &amp; CO.
         </span>
       </Link>
     </motion.div>

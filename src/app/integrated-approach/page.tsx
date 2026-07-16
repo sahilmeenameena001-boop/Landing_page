@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Integrated Approach | Lex & Co.",
+  title: "Integrated Approach | A.P. RANA & CO.",
   description: "Integrated Approach — demo page. Replace with real content.",
 };
 

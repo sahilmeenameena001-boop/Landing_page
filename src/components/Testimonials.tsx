@@ -15,13 +15,13 @@ const TESTIMONIALS = [
     name: "Michael Rodriguez",
     role: "Criminal Defense Client",
     quote:
-      "I was facing serious charges and didn't know where to turn. Lex&Co. gave me hope and fought tirelessly for my freedom.",
+      "I was facing serious charges and didn't know where to turn. A.P. RANA & CO. gave me hope and fought tirelessly for my freedom.",
   },
   {
     name: "Emily Chen",
     role: "Family Law Client",
     quote:
-      "Going through a divorce was difficult, but the team at Lex&Co. made the process manageable.",
+      "Going through a divorce was difficult, but the team at A.P. RANA & CO. made the process manageable.",
   },
 ];
 
