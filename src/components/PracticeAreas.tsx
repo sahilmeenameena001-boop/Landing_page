@@ -7,21 +7,25 @@ import Reveal from "./Reveal";
 const AREAS = [
   {
     title: "Criminal Defense",
+    href: "/practice/criminal-defense",
     intro: "Facing charges is overwhelming — we build an aggressive, evidence-first defense from day one.",
     tags: ["DUI", "Drug Crimes", "Traffic", "Assault"],
   },
   {
     title: "Family Law",
+    href: "/practice/family-law",
     intro: "Compassionate, decisive counsel through the most personal legal matters a family can face.",
     tags: ["Divorce", "Child Custody", "Spousal Support"],
   },
   {
     title: "Personal Injury",
+    href: "/practice/personal-injury",
     intro: "No fee unless we win — we fight for every dollar of the compensation you're owed.",
     tags: ["Car Accidents", "Slip & Fall", "Medical Malpractice"],
   },
   {
     title: "Business Law",
+    href: "/practice/business-law",
     intro: "Protecting your company's interests, from first contract to complex dispute resolution.",
     tags: ["Contracts", "Disputes", "Compliance"],
   },
@@ -48,10 +52,9 @@ export default function PracticeAreas() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {AREAS.map((a, i) => (
             <Reveal key={a.title} delay={i * 0.08}>
-              <motion.div
-                whileHover={{ y: -8 }}
-                transition={{ type: "spring", stiffness: 260, damping: 20 }}
-                className="glass-card rounded-2xl p-7 h-full flex flex-col gap-4"
+              <Link
+                href={a.href}
+                className="glass-card rounded-2xl p-7 h-full flex flex-col gap-4 transition-transform hover:-translate-y-2"
               >
                 <span className="font-display text-3xl text-brass-400">
                   {String(i + 1).padStart(2, "0")}
@@ -68,7 +71,7 @@ export default function PracticeAreas() {
                     </span>
                   ))}
                 </div>
-              </motion.div>
+              </Link>
             </Reveal>
           ))}
         </div>
