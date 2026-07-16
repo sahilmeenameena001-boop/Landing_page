@@ -9,8 +9,8 @@ import Reveal from "./Reveal";
 const LINKS = [
   { href: "/about", label: "About" },
   { href: "/practice", label: "Practice" },
-  { href: "/results", label: "Our People" },
-  { href: "/testimonials", label: "Why Rana & Co." },
+  { href: "/results", label: "Team" },
+  { href: "/testimonials", label: "Why us" },
   { href: "/contact", label: "Contact" },
 ];
 

@@ -8,10 +8,10 @@ import { usePathname } from "next/navigation";
 const LINKS = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
-  { href: "/integrated-approach", label: "Integrated Approach" },
+  { href: "/integrated-approach", label: "Approach" },
   { href: "/practice", label: "Practice" },
-  { href: "/results", label: "Our People" },
-  { href: "/testimonials", label: "Why Rana & Co." },
+  { href: "/results", label: "Team" },
+  { href: "/testimonials", label: "Why us" },
   { href: "/contact", label: "Contact" },
 ];
 
