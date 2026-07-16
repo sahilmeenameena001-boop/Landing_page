@@ -12,7 +12,7 @@ export default function About() {
       <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-14 items-center">
         <Reveal>
           <span className="text-xs tracking-[0.3em] uppercase text-brass-400">
-            About Lex&amp;Co.
+            About A.P. RANA &amp; CO.
           </span>
           <h2 className="font-display text-4xl md:text-5xl mt-4 leading-tight">
             Dedicated to Justice.

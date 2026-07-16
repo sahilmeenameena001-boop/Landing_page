@@ -54,10 +54,10 @@ export default function Footer() {
           <div className="flex flex-col gap-4">
             <div className="flex items-center gap-3">
               <div className="relative h-9 w-9">
-                <Image src="/logo-final.png" alt="Lex & Co." fill sizes="36px" className="object-contain" />
+                <Image src="/logo-final.png" alt="A.P. RANA & CO." fill sizes="36px" className="object-contain" />
               </div>
               <div>
-                <p className="font-display tracking-[0.15em]">LEX&amp;CO.</p>
+                <p className="font-display tracking-[0.15em]">A.P. RANA &amp; CO.</p>
                 <p className="text-xs text-mist">Trusted since 2008</p>
               </div>
             </div>
@@ -144,7 +144,7 @@ export default function Footer() {
         </Reveal>
 
         <div className="flex flex-col md:flex-row items-center justify-between gap-3 text-sm text-mist border-t border-ink/10 pt-8">
-          <p>&copy; 2026 Lex&amp;Co. All rights reserved.</p>
+          <p>&copy; 2026 A.P. RANA &amp; CO. All rights reserved.</p>
           <p>123 Legal Street, Suite 100, New York, NY 10001</p>
         </div>
       </div>

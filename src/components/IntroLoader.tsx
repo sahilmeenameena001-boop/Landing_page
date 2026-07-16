@@ -94,7 +94,7 @@ export default function IntroLoader({ onDone }: { onDone: () => void }) {
               >
                 <Image
                   src="/logo-final.png"
-                  alt="Lex & Co. crest"
+                  alt="A.P. RANA & CO. crest"
                   fill
                   sizes="208px"
                   className="object-contain drop-shadow-[0_0_36px_rgba(169,121,28,0.4)]"
@@ -107,7 +107,7 @@ export default function IntroLoader({ onDone }: { onDone: () => void }) {
                 transition={{ delay: 0.25, duration: 0.6, ease: "easeOut" }}
                 className="font-display text-3xl md:text-5xl"
               >
-                Lex<span className="text-gradient">&amp;</span>Co.
+                A.P. RANA <span className="text-gradient">&amp;</span> CO.
               </motion.h1>
             </motion.div>
           )}
