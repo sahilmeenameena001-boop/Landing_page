@@ -23,7 +23,7 @@ export default function Logo() {
             priority
           />
         </div>
-        <span className="hidden sm:block font-display text-base md:text-lg tracking-[0.12em] text-ink">
+        <span className="hidden sm:block font-display text-[0.9rem] md:text-[1.01rem] tracking-[0.12em] text-ink">
           A.P. RANA &amp; CO.
         </span>
       </Link>
