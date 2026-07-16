@@ -1,73 +1,189 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
-import type { Metadata } from "next";
-import Link from "next/link";
-
 export const metadata: Metadata = {
   title: "Business Law | A.P. RANA & CO.",
-  description: "Corporate & Commercial Law — litigation, arbitration, regulatory defense.",
+  description:
+    "Corporate & Commercial Law — litigation, arbitration, regulatory defense.",
 };
+
+const services = [
+  {
+    title: "Commercial Arbitration",
+    description:
+      "Representation in institutional and ad hoc arbitration involving commercial contracts, shareholder agreements, joint ventures and distribution arrangements. We prepare pleadings, statements of claim, evidentiary submissions and advise on interim relief under Section 9, execution under Section 36 and challenge proceedings under Section 34 of the Arbitration & Conciliation Act.",
+  },
+  {
+    title: "Contractual & Shareholder Disputes",
+    description:
+      "Representation in contractual breach matters, shareholder oppression and mismanagement proceedings before the NCLT, enforcement of settlement agreements, joint venture disputes and contested board resolutions with commercially focused litigation strategies.",
+  },
+  {
+    title: "Energy Sector Litigation",
+    description:
+      "Specialized representation before the Appellate Tribunal for Electricity (APTEL) involving tariff disputes, Power Purchase Agreements (PPA), regulatory compliance, and appeals arising from State Electricity Regulatory Commission orders.",
+  },
+  {
+    title: "Interim Relief & Injunctions",
+    description:
+      "Securing urgent interim relief under Order 39 CPC and Section 9 of the Arbitration Act to preserve assets, restrain contractual breaches, prevent asset dissipation and protect commercial interests pending final adjudication.",
+  },
+  {
+    title: "Employment & Labour Litigation",
+    description:
+      "Advising corporates on wrongful termination claims, industrial tribunal proceedings, ESIC & PF compliance, non-compete enforcement, confidentiality obligations and employment dispute resolution.",
+  },
+  {
+    title: "Consumer & Regulatory Defence",
+    description:
+      "Defending businesses before Consumer Commissions, SEBI proceedings and regulatory authorities by combining litigation strategy with practical regulatory compliance advice.",
+  },
+];
+
+const representativeWork = [
+  "Section 9 interim relief applications before the Delhi High Court in high-value commercial disputes.",
+  "NCLT proceedings for shareholder oppression and mismanagement under the Companies Act, 2013.",
+  "Institutional and ad hoc arbitration mandates covering commercial contracts and joint venture disputes.",
+  "NCLT petitions under Sections 7 & 9 of the Insolvency and Bankruptcy Code.",
+  "APTEL proceedings involving tariff disputes and Power Purchase Agreement enforcement.",
+  "All-India litigation and strategic counsel mandate for Crocs India involving commercial recovery, vendor disputes and employment litigation.",
+  "Panel Legal Counsel for M/s Gunwale Organics.",
+  "Panel Legal Counsel for M/s Civic Fix.",
+];
 
 export default function BusinessLawPage() {
   return (
-    <main className="min-h-screen px-6 py-20 bg-paper text-ink">
-      <div className="max-w-5xl mx-auto">
-        <h1 className="font-display text-4xl md:text-5xl mb-6">Corporate &amp; Commercial Law</h1>
-
-        <p className="text-mist text-lg leading-relaxed mb-6">
-          Dispute resolution as a strategic business instrument, not merely a legal obligation. Commercial disputes, managed without strategic discipline, become protracted liabilities. A.P. RANA &amp; CO approaches corporate litigation as a form of business management: the objective is not simply to win arguments, but to resolve disputes in the manner most consistent with the client's long-term commercial interests whether through aggressive enforcement, negotiated settlement, or appellate reversal. Our corporate litigation team has represented promoters, directors, multinational corporations, and financial institutions in high-value contractual disputes, shareholder conflicts, and complex cross-jurisdictional enforcement proceedings.
+    <main className="bg-paper text-ink">
+      {/* Hero */}
+      <section className="max-w-6xl mx-auto px-6 pt-24 pb-20 text-center">
+        <p className="uppercase tracking-[0.35em] text-sm text-accent-500 mb-4">
+          Practice Area
         </p>
 
-        <h2 className="font-display text-2xl mt-8 mb-3">Commercial Arbitration — Institutional &amp; Ad Hoc</h2>
-        <p className="text-mist text-lg leading-relaxed mb-4">
-          A.P. RANA &amp; CO handles both institutional and ad hoc arbitrations covering commercial contracts, joint ventures, shareholder agreements, and distribution arrangements. Our arbitration team drafts comprehensive pleadings and statements of claim, manages evidentiary submissions, and advises on the strategic deployment of interim relief under Section 9 of the Arbitration and Conciliation Act, 1996, to preserve assets and enforce obligations pending final award. We have appeared before arbitral tribunals under DIAC, ICADR, and ad hoc proceedings governed by the ICA Rules. Post-award, we manage execution proceedings under Section 36 and challenge petitions under Section 34.
+        <h1 className="font-display text-5xl md:text-6xl leading-tight">
+          Corporate & Commercial
+          <br />
+          <span className="italic text-accent-500">Law</span>
+        </h1>
+
+        <p className="max-w-3xl mx-auto mt-8 text-lg leading-8 text-mist">
+          Dispute resolution as a strategic business instrument—not merely a
+          legal obligation. We help businesses resolve complex disputes while
+          protecting their long-term commercial interests through litigation,
+          arbitration, negotiation and regulatory advocacy.
         </p>
+      </section>
 
-        <h2 className="font-display text-2xl mt-6 mb-3">Contractual Disputes &amp; Shareholder Conflicts</h2>
-        <p className="text-mist text-lg leading-relaxed mb-4">
-          We manage high-value contractual breach matters, shareholder oppression and mismanagement proceedings under Sections 241-242 of the Companies Act before the NCLT, and enforcement of settlement deeds across multiple jurisdictions. Our approach integrates commercial pragmatism with forensic documentary analysis ensuring that clients enter negotiations with a litigation position in reserve. We have particular expertise in disputes arising from failed joint ventures, breached shareholder agreements, and contested board resolutions where urgent interim relief is decisive.
-        </p>
+      {/* Introduction */}
+      <section className="max-w-6xl mx-auto px-6 pb-20">
+        <div className="bg-white border border-neutral-200 rounded-3xl p-10 shadow-sm">
+          <h2 className="font-display text-3xl mb-6">
+            Strategic Commercial Litigation
+          </h2>
 
-        <h2 className="font-display text-2xl mt-6 mb-3">Energy Sector — APTEL Representation</h2>
-        <p className="text-mist text-lg leading-relaxed mb-4">
-          A.P. RANA &amp; CO holds specialized expertise in regulatory and commercial disputes in the energy sector. We appear before the Appellate Tribunal for Electricity, managing tariff disputes, power purchase agreement enforcement, sector-specific regulatory compliance, and appeals from State Electricity Regulatory Commission orders. Our energy practice integrates legal advocacy with financial and technical analysis of power sector operations.
-        </p>
+          <p className="text-mist leading-8 mb-6">
+            Commercial disputes, managed without strategic discipline, become
+            protracted liabilities. At A.P. RANA & CO., corporate litigation is
+            approached as a form of business management. Our objective is not
+            simply to win legal arguments, but to resolve disputes in the manner
+            most consistent with our clients' long-term commercial interests—
+            whether through aggressive enforcement, negotiated settlement,
+            arbitration or appellate proceedings.
+          </p>
 
-        <h2 className="font-display text-2xl mt-6 mb-3">Interim Reliefs &amp; Injunctions</h2>
-        <p className="text-mist text-lg leading-relaxed mb-4">
-          The firm has a consistent track record securing urgent interim relief under Order 39 CPC and Section 9 of the Arbitration Act protecting commercial assets, restraining breach of restrictive covenants, preventing asset dissipation, and preserving the status quo pending final determination. We appear on short notice before the Delhi High Court for ad interim injunctions in high-value commercial matters.
-        </p>
+          <p className="text-mist leading-8">
+            Our corporate litigation team has represented promoters, directors,
+            multinational corporations and financial institutions in high-value
+            contractual disputes, shareholder conflicts and complex
+            cross-jurisdictional enforcement proceedings.
+          </p>
+        </div>
+      </section>
 
-        <h2 className="font-display text-2xl mt-6 mb-3">Employment &amp; Labor Litigation</h2>
-        <p className="text-mist text-lg leading-relaxed mb-4">
-          A.P. RANA &amp; CO represents corporates in employment disputes including wrongful termination claims, ESIC and PF compliance matters, industrial tribunal proceedings, and enforcement of non-compete and confidentiality obligations. We advise HR teams on compliant termination procedures and severance structures to minimize downstream litigation risk.
-        </p>
+      {/* Services */}
+      <section className="max-w-6xl mx-auto px-6 pb-24">
+        <div className="text-center mb-12">
+          <p className="uppercase tracking-[0.35em] text-sm text-accent-500 mb-3">
+            Core Services
+          </p>
 
-        <h2 className="font-display text-2xl mt-6 mb-3">Consumer Forum &amp; Regulatory Defense</h2>
-        <p className="text-mist text-lg leading-relaxed mb-4">
-          For corporates facing consumer commission proceedings, SEBI enforcement actions, or regulatory inquiry from sector bodies, A.P. RANA &amp; CO provides integrated legal defense combining litigation advocacy with regulatory compliance advisory ensuring the client's commercial position is defended without creating adverse precedent.
-        </p>
+          <h2 className="font-display text-4xl">
+            Our Corporate Law Practice
+          </h2>
+        </div>
 
-        <h2 className="font-display text-2xl mt-6 mb-3">Representative Work</h2>
-        <ul className="list-disc ml-6 text-mist mb-6">
-          <li>Section 9 interim relief applications before the Delhi High Court in high-value commercial disputes</li>
-          <li>NCLT proceedings for shareholder oppression and mismanagement under the Companies Act, 2013</li>
-          <li>Institutional and ad hoc arbitration mandates covering commercial contracts and JV disputes</li>
-          <li>NCLT petitions under Sections 7 &amp; 9 of the IBC for financial and operational creditors</li>
-          <li>APTEL proceedings for power sector clients on tariff and PPA enforcement</li>
-          <li>All-India litigation and strategic counsel mandate for Crocs India, commercial recovery, vendor disputes, employment litigation</li>
-          <li>Panel Legal Counsel for M/s Gunwale Organics and M/s Civic Fix</li>
-        </ul>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {services.map((service) => (
+            <div
+              key={service.title}
+              className="bg-white rounded-3xl border border-neutral-200 p-8 hover:shadow-lg transition-shadow"
+            >
+              <h3 className="font-display text-2xl mb-5">
+                {service.title}
+              </h3>
 
-        <p className="text-mist text-lg leading-relaxed mb-8">
-          Contact us to discuss bespoke dispute-resolution strategies that align litigation with your commercial objectives.
-        </p>
+              <p className="text-mist leading-7">
+                {service.description}
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
 
-        <Link href="/contact" className="inline-flex rounded-full bg-accent-500 hover:bg-accent-400 text-ink font-semibold px-6 py-3 transition-colors">
-          Get a Consultation
-        </Link>
-      </div>
+      {/* Representative Work */}
+      <section className="max-w-6xl mx-auto px-6 pb-24">
+        <div className="bg-white border border-neutral-200 rounded-3xl p-10">
+          <p className="uppercase tracking-[0.35em] text-sm text-accent-500 mb-3">
+            Experience
+          </p>
+
+          <h2 className="font-display text-4xl mb-10">
+            Representative Work
+          </h2>
+
+          <div className="grid md:grid-cols-2 gap-5">
+            {representativeWork.map((item) => (
+              <div
+                key={item}
+                className="flex gap-3 items-start rounded-xl border border-neutral-100 p-4"
+              >
+                <span className="text-accent-500 font-bold text-lg">✓</span>
+
+                <p className="text-mist leading-7">
+                  {item}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="max-w-5xl mx-auto px-6 pb-24">
+        <div className="bg-white rounded-3xl border border-neutral-200 text-center px-8 py-16">
+          <p className="uppercase tracking-[0.35em] text-sm text-accent-500 mb-4">
+            Let's Work Together
+          </p>
+
+          <h2 className="font-display text-4xl md:text-5xl mb-6">
+            Protect Your Business Interests
+          </h2>
+
+          <p className="max-w-2xl mx-auto text-mist text-lg leading-8 mb-10">
+            Whether you require strategic litigation, commercial arbitration,
+            shareholder dispute resolution or regulatory defence, our team
+            provides commercially focused legal solutions tailored to your
+            business objectives.
+          </p>
+
+          <Link
+            href="/contact"
+            className="inline-flex items-center rounded-full bg-accent-500 hover:bg-accent-400 transition-colors px-8 py-4 font-semibold text-ink"
+          >
+            Schedule a Consultation
+          </Link>
+        </div>
+      </section>
     </main>
   );
 }
