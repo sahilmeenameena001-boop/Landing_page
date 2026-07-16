@@ -145,7 +145,7 @@ export default function Footer() {
 
         <div className="flex flex-col md:flex-row items-center justify-between gap-3 text-sm text-mist border-t border-ink/10 pt-8">
           <p>&copy; 2026 A.P. RANA &amp; CO. All rights reserved.</p>
-          <p>123 Legal Street, Suite 100, New York, NY 10001</p>
+          <p>A.P.Rana & Co. (Legal) Chamber No. 530, Lawyer's Chamber Block, saket Court Complex, Saket, New DElhi 110017</p>
         </div>
       </div>
     </footer>
