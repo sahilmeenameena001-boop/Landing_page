@@ -25,7 +25,7 @@ export default function Navbar() {
         initial={{ y: -40, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.3 }}
-        className="bg-paper border border-ink/10 flex items-center gap-3 md:gap-10 rounded-full px-6 md:px-8 py-4 shadow-sm">
+        className="w-[min(96vw,88rem)] bg-paper border border-ink/10 flex items-center gap-3 md:gap-10 rounded-full px-6 md:px-8 py-2 shadow-sm">
         <ul className="hidden md:flex items-center gap-7 text-sm text-mist font-medium">
           {LINKS.map((l) => {
             const active = pathname === l.href;
@@ -59,7 +59,7 @@ export default function Navbar() {
         <button
           aria-label="Toggle menu"
           onClick={() => setOpen((o) => !o)}
-          className="md:hidden flex items-center gap-2 py-1"
+          className="md:hidden flex items-center gap-2 py-0.5"
         >
           <span className="font-display text-sm tracking-[0.1em] text-ink">MENU</span>
           <span className="relative h-4 w-5 shrink-0">
